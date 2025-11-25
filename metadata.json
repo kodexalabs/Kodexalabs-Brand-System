@@ -1,0 +1,5 @@
+{
+  "name": "KodexaLabs Brand System",
+  "description": "Develop an interactive brand guidelines generator for KodexaLabs that produces comprehensive design assets, including:\n    1. Design tokens\n    2. Typography guidelines\n    3. Color palettes\n    4. Component examples\nEnsure the generator is user-friendly and outputs are customizable and scalable for various applications. Provide clear instructions for usage and integration.",
+  "requestFramePermissions": []
+}

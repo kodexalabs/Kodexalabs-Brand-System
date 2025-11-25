@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KODEXALABS | Brand Guidelines</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                black: 'var(--brand-black)',
+                white: 'var(--brand-white)',
+                gray: 'var(--brand-gray)',
+                lightGray: 'var(--brand-light-gray)',
+                textGray: 'var(--brand-text-gray)',
+                accent: 'var(--brand-accent)'
+              }
+            },
+            fontFamily: {
+              sans: ['var(--font-body)', 'sans-serif'],
+              display: ['var(--font-display)', 'sans-serif'],
+              mono: ['monospace'] 
+            },
+            letterSpacing: {
+              tighter: 'var(--tracking-tighter)',
+              tight: 'var(--tracking-tight)',
+              normal: '0',
+              wide: 'var(--tracking-wide)',
+              widest: 'var(--tracking-widest)',
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, var(--brand-light-gray) 1px, transparent 1px), linear-gradient(to bottom, var(--brand-light-gray) 1px, transparent 1px)",
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: var(--font-body), sans-serif;
+        background-color: var(--brand-black);
+        color: var(--brand-white);
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-display), sans-serif;
+      }
+      ::selection {
+        background-color: var(--brand-white);
+        color: var(--brand-black);
+      }
+      .grid-bg {
+        background-size: 40px 40px;
+        mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+      }
+      input[type="color"] {
+        -webkit-appearance: none;
+        border: none;
+        width: 32px;
+        height: 32px;
+      }
+      input[type="color"]::-webkit-color-swatch-wrapper {
+        padding: 0;
+      }
+      input[type="color"]::-webkit-color-swatch {
+        border: 1px solid #333;
+        border-radius: 4px;
+      }
+      
+      /* Lenis Recommended CSS */
+      html.lenis, html.lenis body {
+        height: auto;
+      }
+      .lenis.lenis-smooth {
+        scroll-behavior: auto !important;
+      }
+      .lenis.lenis-smooth [data-lenis-prevent] {
+        overscroll-behavior: contain;
+      }
+      .lenis.lenis-stopped {
+        overflow: hidden;
+      }
+      .lenis.lenis-scrolling iframe {
+        pointer-events: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.1.20/+esm"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
